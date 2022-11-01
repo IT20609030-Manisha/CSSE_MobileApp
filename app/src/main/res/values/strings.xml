@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DD</string>
+
+    <string name="login">LOGIN</string>
+    <string name="etEmailHint">Enter email</string>
+    <string name="etPassword">Enter Password</string>
+    <string name="btnCreateAccount">CREATE AN ACCOUNT</string>
 </resources>
