@@ -51,7 +51,7 @@
                                 android:src="@drawable/dashboard"/>
 
                             <Button
-                                android:id="@+id/btnOrders"
+                                android:id="@+id/btnDashboard"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
@@ -83,7 +83,7 @@
                                 android:src="@drawable/order"/>
 
                             <Button
-                                android:id="@+id/adminFoodRequests"
+                                android:id="@+id/btnOrder"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
@@ -116,7 +116,7 @@
                                 android:src="@drawable/product"/>
 
                             <Button
-                                android:id="@+id/btn_DriverAssign"
+                                android:id="@+id/btn_products"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
@@ -149,7 +149,7 @@
                                 android:src="@drawable/suppliers"/>
 
                             <Button
-                                android:id="@+id/btn_vacancy"
+                                android:id="@+id/btn_supplier"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
@@ -181,7 +181,7 @@
                                 android:src="@drawable/transaction"/>
 
                             <Button
-                                android:id="@+id/btn_Reports"
+                                android:id="@+id/btn_transaction"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
