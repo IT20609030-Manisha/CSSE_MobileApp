@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DD">
         <activity
+            android:name=".AddOrder"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPurchaseOrder"
+            android:exported="false" />
+        <activity
             android:name=".LoginPage"
             android:exported="false" />
         <activity
