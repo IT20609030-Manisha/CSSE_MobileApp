@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DD">
         <activity
+            android:name=".RecyclerviewProdList"
+            android:exported="false" />
+        <activity
+            android:name=".AddProduct"
             android:name=".AddOrder"
             android:exported="false" />
         <activity
