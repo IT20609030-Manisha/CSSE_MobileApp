@@ -9,6 +9,7 @@ import android.widget.Button;
 public class AdminDashboard extends AppCompatActivity {
 
     Button btnDashboard, btnOrder, btnProducts, btnSupplier, btnTransaction;
+    Button btnOrders;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
