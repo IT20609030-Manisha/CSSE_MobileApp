@@ -28,5 +28,18 @@ public class AdminDashboard extends AppCompatActivity {
             Intent i = new Intent(AdminDashboard.this, AddProduct.class);
             startActivity(i);
         });
+
+        //Purchase Order
+        btnOrder.setOnClickListener(view -> {
+            Intent i = new Intent(AdminDashboard.this, ViewPurchaseOrder.class);
+            startActivity(i);
+        });
+
+        //
+        btnSupplier.setOnClickListener(view -> {
+            Intent i = new Intent(AdminDashboard.this, RecyclerviewApprovedOrdList.class);
+            startActivity(i);
+        });
+
     }
 }
