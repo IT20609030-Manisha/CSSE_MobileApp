@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/update_orderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Order ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_siteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Site Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_itemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item List"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_purchaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Purchase Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_deliveryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delivery Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_deliveryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delivery Address"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Total Amount"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_orderStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Order Status"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/update_orderQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/update_orderdelNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delivery Note"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/update_orderdeliveredQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delivered Quantity"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_OrderUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:backgroundTint="@color/btnclr"
+        android:textSize="18sp"/>
+</LinearLayout>

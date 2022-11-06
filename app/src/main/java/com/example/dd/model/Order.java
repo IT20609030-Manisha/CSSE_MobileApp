@@ -12,11 +12,12 @@ public class Order {
     private String orderStatus;
     private String qty;
     private String deliveryNote;
+    private String deliveredQty;
 
     public Order() {
     }
 
-    public Order(String orderID, String siteName, String itemList, String purchaseDate, String deliveryDate, String deliveryAddress, String totalAmount, String orderStatus, String qty, String deliveryNote) {
+    public Order(String orderID, String siteName, String itemList, String purchaseDate, String deliveryDate, String deliveryAddress, String totalAmount, String orderStatus, String qty, String deliveryNote, String deliveredQty) {
         this.orderID = orderID;
         this.siteName = siteName;
         this.itemList = itemList;
@@ -27,6 +28,15 @@ public class Order {
         this.orderStatus = orderStatus;
         this.qty = qty;
         this.deliveryNote = deliveryNote;
+        this.deliveredQty = deliveredQty;
+    }
+
+    public String getDeliveredQty() {
+        return deliveredQty;
+    }
+
+    public void setDeliveredQty(String deliveredQty) {
+        this.deliveredQty = deliveredQty;
     }
 
     public String getOrderID() {
