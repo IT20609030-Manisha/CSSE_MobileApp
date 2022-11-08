@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+/**
+ * Admin Dashboard Contains the buttons to navigation the other pages
+ *
+ */
 public class AdminDashboard extends AppCompatActivity {
 
     Button btnDashboard, btnOrder, btnProducts, btnSupplier, btnTransaction;
@@ -35,7 +39,7 @@ public class AdminDashboard extends AppCompatActivity {
             startActivity(i);
         });
 
-        //
+        //suppliers
         btnSupplier.setOnClickListener(view -> {
             Intent i = new Intent(AdminDashboard.this, RecyclerviewApprovedOrdList.class);
             startActivity(i);

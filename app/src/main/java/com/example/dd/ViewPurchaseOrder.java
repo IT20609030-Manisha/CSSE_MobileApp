@@ -10,6 +10,9 @@ import com.example.dd.model.Order;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * Display purchase Orders
+ */
 public class ViewPurchaseOrder extends AppCompatActivity {
 
     RecyclerView recyclerViewO;

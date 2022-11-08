@@ -16,6 +16,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Login function
+ * Takes username and password as inputs
+ * If the credentials are correct successfully login otherwise display an error message
+ */
 public class LoginPage extends AppCompatActivity {
 
     private EditText etUserEmail, etUserPassword;
@@ -42,15 +47,19 @@ public class LoginPage extends AppCompatActivity {
                 String userEmail = etUserEmail.getText().toString();
                 String userPassword = etUserPassword.getText().toString();
 
+                //if credentials are not input
                 if (TextUtils.isEmpty(userEmail) && TextUtils.isEmpty(userPassword)) {
                     Toast.makeText(LoginPage.this, "Please enter your credentials..", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                //input the credentials correctly
                 else if (userEmail.equals("admin@gmail.com") && userPassword.equals("123")){
                     Toast.makeText(LoginPage.this, "Admin Login...", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(LoginPage.this, AdminDashboard.class);
                     startActivity(i);
                 }
+
+                //credentials are incorrect
                 else{
                     Toast.makeText(LoginPage.this, "Incorrect Credentials...", Toast.LENGTH_SHORT).show();
                 }

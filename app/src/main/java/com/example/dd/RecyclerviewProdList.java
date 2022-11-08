@@ -11,6 +11,10 @@ import com.example.dd.model.Product;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * Displays all the products
+ *
+ */
 public class RecyclerviewProdList extends AppCompatActivity {
     RecyclerView recyclerViewProdDisplay;
     PostProductAdapter adapterProdDisplay;

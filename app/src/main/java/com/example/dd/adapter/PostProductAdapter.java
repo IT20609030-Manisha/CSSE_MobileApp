@@ -18,6 +18,10 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.squareup.picasso.Picasso;
 
+/**
+ * Display the added products
+ * 
+ */
 public class PostProductAdapter extends FirebaseRecyclerAdapter<Product,PostProductAdapter.ViewHolder2> {
     private Context context;
 

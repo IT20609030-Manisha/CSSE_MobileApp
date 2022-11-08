@@ -10,6 +10,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+/**
+ * Splash Screen with the animated image
+ */
 public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 5000;

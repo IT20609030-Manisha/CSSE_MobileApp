@@ -25,6 +25,11 @@ import com.orhanobut.dialogplus.DialogPlus;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * Displays the Orders which are available in the database
+ * This page includes the function adding 'delivery note'
+ */
 public class OrderAdapter extends FirebaseRecyclerAdapter<Order, OrderAdapter.ViewHolder5> {
 
     private Context context;
@@ -46,6 +51,7 @@ public class OrderAdapter extends FirebaseRecyclerAdapter<Order, OrderAdapter.Vi
         holder.orderStatus.setText(model.getOrderStatus());
         holder.qty.setText(model.getQty());
 
+        //Adding delivery note
         holder.btnDelNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
