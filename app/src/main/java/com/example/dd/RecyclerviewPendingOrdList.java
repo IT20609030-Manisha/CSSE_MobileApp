@@ -7,42 +7,42 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.dd.adapter.ApprovedOrderAdapter;
+import com.example.dd.adapter.PendingOrderAdapter;
 import com.example.dd.model.Order;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RecyclerviewApprovedOrdList extends AppCompatActivity {
-    RecyclerView recyclerViewApprOrd;
-    ApprovedOrderAdapter adapterApprovedOrder;
+public class RecyclerviewPendingOrdList extends AppCompatActivity {
+    RecyclerView recyclerViewPendingOrd;
+    PendingOrderAdapter adapterPending;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview_approved_ord_list);
+        setContentView(R.layout.activity_recyclerview_pending_ord_list);
 
-        this.setTitle("Approved Orders");
+        this.setTitle("Pending Orders");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        recyclerViewApprOrd = findViewById(R.id.recyclerViewApprOrd_id);
-        recyclerViewApprOrd.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewPendingOrd = findViewById(R.id.recyclerPendingOrd_id);
+        recyclerViewPendingOrd.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<Order> options=
                 new FirebaseRecyclerOptions.Builder<Order>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Order").orderByChild("orderStatus").equalTo("Accept"),Order.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Order").orderByChild("orderStatus").equalTo("Pending"),Order.class)
                         .build();
 
-        adapterApprovedOrder = new ApprovedOrderAdapter(options, this);
-        recyclerViewApprOrd.setAdapter(adapterApprovedOrder);
+        adapterPending = new PendingOrderAdapter(options, this);
+        recyclerViewPendingOrd.setAdapter(adapterPending);
     }
-
     @Override
     protected void onStart() {
         super.onStart();
-        adapterApprovedOrder.startListening();
+        adapterPending.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        adapterApprovedOrder.stopListening();
+        adapterPending.stopListening();
     }
 }

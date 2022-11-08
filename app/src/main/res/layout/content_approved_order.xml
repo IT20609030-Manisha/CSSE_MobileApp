@@ -30,6 +30,22 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/update_orderQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/update_orderdeliveredQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delivered Quantity"
+        android:inputType="textPersonName" />
+
+    <EditText
         android:id="@+id/update_purchaseDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,13 +84,7 @@
         android:ems="10"
         android:hint="Order Status"
         android:inputType="textPersonName" />
-    <EditText
-        android:id="@+id/update_orderQty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Quantity"
-        android:inputType="textPersonName" />
+
     <EditText
         android:id="@+id/update_orderdelNote"
         android:layout_width="match_parent"
@@ -82,13 +92,7 @@
         android:ems="10"
         android:hint="Delivery Note"
         android:inputType="textPersonName" />
-    <EditText
-        android:id="@+id/update_orderdeliveredQty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Delivered Quantity"
-        android:inputType="textPersonName" />
+
 
     <Button
         android:id="@+id/btn_OrderUpdate"
