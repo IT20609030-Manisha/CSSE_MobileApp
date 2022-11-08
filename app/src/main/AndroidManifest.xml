@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DD">
         <activity
+            android:name=".OrderReport"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RecyclerviewRejectOrdList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RecyclerviewPendingOrdList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RecyclerviewApprovedOrdList"
             android:exported="false" />
         <activity

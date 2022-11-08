@@ -21,7 +21,7 @@
             android:layout_marginBottom="5dp"
             android:text="Order ID"
             android:textSize="16sp"
-            android:id="@+id/tv_orderIdRetrive">
+            android:id="@+id/tv_orderIdReject">
         </TextView>
 
 
@@ -31,7 +31,7 @@
             android:layout_marginBottom="5dp"
             android:text="Site Name"
             android:textSize="16sp"
-            android:id="@+id/tv_siteNameRetrive">
+            android:id="@+id/tv_siteNameReject">
         </TextView>
 
 
@@ -41,22 +41,7 @@
             android:layout_marginBottom="5dp"
             android:text="Item List"
             android:textSize="16sp"
-            android:id="@+id/tv_itemListRetrive"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Required Quantity"
-            android:textSize="16sp"
-            android:id="@+id/tv_orderQtyRetrive"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Delivered Quantity"
-            android:textSize="16sp"
-            android:id="@+id/tv_orderdeliveredQtyRetrive"/>
+            android:id="@+id/tv_itemListReject"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -64,7 +49,7 @@
             android:layout_marginBottom="5dp"
             android:text="Purchase Date"
             android:textSize="16sp"
-            android:id="@+id/tv_purchaseDateRetrive"/>
+            android:id="@+id/tv_purchaseDateReject"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -72,7 +57,7 @@
             android:layout_marginBottom="5dp"
             android:text="Delivery Date"
             android:textSize="16sp"
-            android:id="@+id/tv_deliveryDateRetrive"/>
+            android:id="@+id/tv_deliveryDateReject"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -80,7 +65,7 @@
             android:layout_marginBottom="5dp"
             android:text="Delivery Address"
             android:textSize="16sp"
-            android:id="@+id/tv_deliveryAddRetrive"/>
+            android:id="@+id/tv_deliveryAddReject"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -88,7 +73,7 @@
             android:layout_marginBottom="5dp"
             android:text="Total Amount"
             android:textSize="16sp"
-            android:id="@+id/tv_totalAmountRetrive"/>
+            android:id="@+id/tv_totalAmountReject"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -96,47 +81,28 @@
             android:layout_marginBottom="10dp"
             android:text="Order Status"
             android:textSize="16sp"
-            android:id="@+id/tv_orderStatusRetrive"/>
-
+            android:id="@+id/tv_orderStatusReject"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Required Quantity"
+            android:textSize="16sp"
+            android:id="@+id/tv_orderQtyReject"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Delivered Quantity"
+            android:textSize="16sp"
+            android:id="@+id/tv_orderdeliveredQtyReject"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Delivery Note"
             android:textSize="16sp"
-            android:id="@+id/tv_orderdelNoteRetrive"/>
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <Button
-                android:id="@+id/btn_Accept"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
-                android:backgroundTint="@color/btnclr"
-                android:padding="15dp"
-                android:text="Edit" />
-
-            <Button
-                android:id="@+id/btn_reject"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
-                android:backgroundTint="@color/btnclr"
-                android:padding="15dp"
-                android:text="Reject" />
-
-
-        </LinearLayout>
+            android:id="@+id/tv_orderdelNoteReject"/>
 
 
     </LinearLayout>

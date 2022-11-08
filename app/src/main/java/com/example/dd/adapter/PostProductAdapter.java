@@ -30,7 +30,7 @@ public class PostProductAdapter extends FirebaseRecyclerAdapter<Product,PostProd
     protected void onBindViewHolder(@NonNull ViewHolder2 holder, int position, @NonNull Product model) {
         holder.tv_displayProdName.setText("Product Name : " + model.getProductName());
         holder.tv_displayProdDescription.setText("Description : " + model.getDescription());
-        holder.tv_displayProdPrice.setText(model.getProductPrice());
+        holder.tv_displayProdPrice.setText("Rs. " +model.getProductPrice());
         holder.tv_displaySupplier.setText("Supplier : " + model.getSupplier());
         holder.tv_displayStatus.setText("Donation Status : "+model.getStatus());
 
