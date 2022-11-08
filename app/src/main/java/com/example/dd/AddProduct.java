@@ -24,6 +24,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+/**
+ * Adding a new product to the system
+ * The product can be inserted by filling the form with all fields
+ */
 public class AddProduct extends AppCompatActivity {
 
     FirebaseDatabase mDatabase;

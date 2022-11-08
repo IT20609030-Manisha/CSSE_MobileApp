@@ -31,6 +31,10 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Get approved orders
+ *
+ */
 public class ApprovedOrderAdapter extends FirebaseRecyclerAdapter<Order,ApprovedOrderAdapter.ViewHolder3> {
     private Context context;
     public ApprovedOrderAdapter(@NonNull FirebaseRecyclerOptions<Order> options, Context context) {

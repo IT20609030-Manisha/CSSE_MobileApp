@@ -11,6 +11,11 @@ import com.example.dd.model.Order;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * Displays the details of approved orders
+ *
+ */
+
 public class RecyclerviewApprovedOrdList extends AppCompatActivity {
     RecyclerView recyclerViewApprOrd;
     ApprovedOrderAdapter adapterApprovedOrder;
